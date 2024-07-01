@@ -1,17 +1,19 @@
 # Use a Node.js base image
 FROM node:18
 
-# Set the working directory
+# Set the working directory inside the container
 WORKDIR /app
 
-# Copy the package.json and package-lock.json files
+# Copy the package.json and package-lock.json files to the working directory
 COPY package*.json ./
 
-# Install dependencies
+# Install dependencies globally
 RUN npm install -g expo-cli @expo/ngrok
+
+# Install project dependencies
 RUN npm install
 
-# Copy the rest of the application files
+# Copy the rest of the application files to the working directory
 COPY . .
 
 # Expose the port that Expo uses
