@@ -38,7 +38,7 @@ jobs:
           file: ./Dockerfile
           builder: ${{steps.buildx.outputs.name}}
           push: true
-          tags: tranthequang/MindMasterMinds-App:latest
+          tags: tranthequang/mindmasterminds-app:latest
       - name: Verify
         run: |
           echo ${{steps.docker_build_server.outputs.digest}}
@@ -54,7 +54,7 @@ jobs:
           command: |
             cd ~/compose-demo
             docker compose pull
-            docker compose up --force-recreate --no-deps -d MindMasterMinds-App
+            docker compose up --force-recreate --no-deps -d mindmasterminds-app
           host: ${{ secrets.HOST }}
           user: ${{ secrets.USERNAME }}
           pass: ${{ secrets.PASSWORD }}
