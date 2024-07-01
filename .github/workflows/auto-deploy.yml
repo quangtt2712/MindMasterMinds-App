@@ -54,7 +54,7 @@ jobs:
           command: |
             cd ~/compose-demo
             docker pull tranthequang/mindmasterminds-app:latest
-            docker run -it --rm -p 19000:19000 -p 19001:19001 -p 19002:19002 mindmasterminds-app
+            docker run -it --rm -p 19000:19000 -p 19001:19001 -p 19002:19002 tranthequang/mindmasterminds-app:latest
           host: ${{ secrets.HOST }}
           user: ${{ secrets.USERNAME }}
           pass: ${{ secrets.PASSWORD }}
