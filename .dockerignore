@@ -1,0 +1,49 @@
+# Bỏ qua node_modules - chúng sẽ được cài đặt bên trong container Docker
+node_modules
+
+# Bỏ qua các tệp log
+npm-debug.log
+yarn-error.log
+*.log
+
+# Bỏ qua cache của Expo
+.expo
+.expo-shared
+
+# Bỏ qua các tệp hệ điều hành tạo ra
+.DS_Store
+Thumbs.db
+
+# Bỏ qua các thư mục build và output
+dist
+build
+
+# Bỏ qua các tệp và thư mục của IDE và editor
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Bỏ qua các tệp biến môi trường
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Bỏ qua các tệp tạm và thư mục tạm
+*.swp
+*~
+.project
+.settings
+.tmp
+
+# Bỏ qua các tệp Git
+.git
+.gitignore
+
+# Bỏ qua thư mục Android và iOS build nếu không cần thiết
+android
+ios

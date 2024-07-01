@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "scheme": "mindmasterminds",
+    "name": "MindMasterMinds-App",
+    "slug": "MindMasterMinds-App",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo-app.jpg",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/splash2.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
