@@ -54,6 +54,7 @@ jobs:
           command: |
             cd ~/compose-demo
             docker compose pull
+            truncate -s 0 $(docker inspect --format='{{.LogPath}}' mindmasterminds-app)
             docker compose up --force-recreate --no-deps -d mindmasterminds-app
           host: ${{ secrets.HOST }}
           user: ${{ secrets.USERNAME }}
